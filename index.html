@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simon says game</title>
+		<meta charset="UTF-8">
+  		<meta name="description" content="Simon Says game written with javascript.Play javascript games" />
+  		<meta name="keywords" content="Simon Says,JavaScript" />
+  		<meta name="author" content="lus" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="page_container">
+			<h1 class="title">Simon Says</h1>
+			<div class="how_play">
+				<p>Do what Simon Says...</p>
+				<p>Follow the pattern of lights and sounds <br />for as long as you can... if you can!</p>
+			</div>
+			<div class="game_container">
+				<div class="game">
+					<div class="color color_hover_active color_shine red" onclick="colorClick(this)" data-id="1">
+					</div>
+					<div class="color color_hover_active color_shine_inverse green" onclick="colorClick(this)" data-id="2">
+					</div>
+					<div class="mid_ciricle">
+
+					</div>
+					<div class="color color_hover_active color_shine_inverse yellow" onclick="colorClick(this)" data-id="3">
+					</div>
+					<div class="color color_hover_active color_shine blue" onclick="colorClick(this)" data-id="4">
+					</div>
+
+				</div>
+				<p>Score : <span id="score">0</span></p>
+				<p>Original game : <a href="http://www.freesimon.org" target="_blank">Play here</a></p>
+			</div>
+			<button class="btn_play shine_effect"  onclick="startGame()">Start</button>
+			<div class="game_info">
+				<p><a href="http://www.freesimon.org">Simon</a> was an electronic memory game released by Milton Bradley in 1978 that became an instant hit<br />
+					worldwide. Launched at Studio 54 in New York, its popularity was based on its simple premise (very<br />
+					easy to pick up), the gameplay itself (visual/touch/sound/memory!) and a subtle but clever decision<br />
+					by its creators to make the sounds themselves harmonic - it always sounds pleasing whichever order<br />
+					the tones play. You can play the <a href="http://www.freesimon.org">Simon game online here</a>.</p>
+			</div>
+		</div>
+		<footer>
+
+		</footer>
+		<script type="text/javascript" src="js/init.js"></script>
+	</body>
+</html>
