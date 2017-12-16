@@ -75,6 +75,7 @@ function startGame() {
 	let random_number, sectors, audio;
 	if(!game_in_progress){
         random_number = Math.floor(Math.random() * 4 + 1);
+		console.log(random_number);
         sectors = document.getElementsByClassName('color');
         for (let sector of sectors) {
             sector.classList.remove('color_hover_active');
