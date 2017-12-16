@@ -91,6 +91,3 @@ function startGame() {
         }
 	}
 }
-// function endAudio(audio, number) {
-//     document.getElementsByClassName('color')[number].classList.remove('active');
-// }
