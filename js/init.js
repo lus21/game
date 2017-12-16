@@ -9,6 +9,7 @@ function colorClick(color_js){
     if (!game_in_progress || sequence_in_progress) {
         return;
     }
+	// com
     player_move = color_js.dataset.id;
     player_last_step_index = (player_moves.length == 0 ? 1 : player_moves.length + 1);
     if (color_sequence[player_move_index] == player_move) {
@@ -31,6 +32,7 @@ function colorClick(color_js){
                 sector.className += ' color_hover_active';
             }
             player_move_index = 0;
+			console.log(player_move);
             player_moves = [];
             color_sequence = [];
             game_in_progress = false;
